@@ -11,11 +11,6 @@
 
 NonAliasExportDecl(void,glClampColorARB,(GLenum target, GLenum clamp)){STUB}
 
-void APIENTRY_GL4ES gl4es_glGetMinmaxParameteriv(GLenum target, GLenum pname, GLint *params) {
-  errorShim(GL_INVALID_ENUM);
-}
-AliasExport(void,glGetMinmaxParameteriv,,(GLenum target, GLenum pname, GLint *params));
-
 void APIENTRY_GL4ES gl4es_glCopyColorTable(GLenum target, GLenum pname, GLint *params) {
   errorShim(GL_INVALID_ENUM);
 }
@@ -50,11 +45,6 @@ void APIENTRY_GL4ES gl4es_glConvolutionParameterf(GLenum target, GLenum pname, G
   errorShim(GL_INVALID_ENUM);
 }
 AliasExport(void,glConvolutionParameterf,,(GLenum target, GLenum pname, GLint *params));
-
-void APIENTRY_GL4ES gl4es_glGetMinmaxParameterfv(GLenum target, GLenum pname, GLint *params) {
-  errorShim(GL_INVALID_ENUM);
-}
-AliasExport(void,glGetMinmaxParameterfv,,(GLenum target, GLenum pname, GLint *params));
 
 void APIENTRY_GL4ES gl4es_glGetColorTable(GLenum target, GLenum pname, GLint *params) {
   errorShim(GL_INVALID_ENUM);
